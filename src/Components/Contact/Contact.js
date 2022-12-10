@@ -30,14 +30,18 @@ const Contact = () => {
   return (
     <div className="my-20 container mx-auto" id="contact">
       <div>
-        <h2 className="text-center text-4xl font-bold mb-10">Get In Touch</h2>
+        <h2 className="text-center text-xl md:text-4xl font-bold mb-5 md:mb-10">
+          Get In Touch
+        </h2>
       </div>
       <div className="lg:grid lg:grid-cols-2 gap-5">
         <div>
           <img className="rounded-xl" src={contactFormImage} alt="" />
         </div>
         <div className="md:pl-5 px-2 md:px-0 md:mt-24">
-          <h4 className="text-2xl mb-10 font-bold">Contact Me</h4>
+          <h4 className="md:text-2xl text-xl md:mb-10 hidden md:block font-bold">
+            Contact Me
+          </h4>
           <form ref={form} onSubmit={sendEmail}>
             <input
               className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl"

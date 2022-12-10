@@ -32,8 +32,10 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="my-20" id="projects">
-      <h2 className="text-4xl text-center font-bold mb-10">Projects</h2>
+    <div className="md:my-20 my-10" id="projects">
+      <h2 className="md:text-4xl text-xl text-center font-bold mb-5 md:mb-10">
+        Projects
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:px-20">
         {projectsInfo.map((project) => (
           <div
