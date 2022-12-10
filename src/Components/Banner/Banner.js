@@ -4,7 +4,7 @@ import bannerImage from "../../assets/images/bannerImage.png";
 const Banner = () => {
   return (
     <div className="">
-      <div className="">
+      <div className="hidden md:block">
         <div className="">
           <img src={bannerImage} className="mt-[-150px] w-full" alt="" />
         </div>
