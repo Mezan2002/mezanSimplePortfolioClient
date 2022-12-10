@@ -17,14 +17,16 @@ const Banner = () => {
         </div>
       </div>
       <div className="md:hidden block">
-        <div className="">
-          <img src={bannerImage} className="w-full mt-[-120px]" alt="" />
-        </div>
-        <div className="absolute top-32 left-5 text-white">
-          <h2 className="md:text-[130px] text-2xl font-bold">Mezanur Rahman</h2>
-          <p className="md:text-xl text-sm font-semibold">
-            Junior Web Developer
-          </p>
+        <div className="relative">
+          <img src={bannerImage} className="w-full mt-[-90px]" alt="" />
+          <div className="absolute bottom-5 left-5 text-white">
+            <h2 className="md:text-[130px] text-2xl font-bold">
+              Mezanur Rahman
+            </h2>
+            <p className="md:text-xl text-sm font-semibold">
+              Junior Web Developer
+            </p>
+          </div>
         </div>
       </div>
     </div>

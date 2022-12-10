@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           Mezanur Rahman
         </a>
-        <div className="navbar-end">
+        <div className="navbar-end z-10">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
