@@ -5,13 +5,13 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a>Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a>Projects</a>
+        <a href="/">Projects</a>
       </li>
       <li>
-        <a>Contact Me</a>
+        <a href="/">Contact Me</a>
       </li>
     </>
   );
@@ -43,13 +43,18 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl" href="/">
+          <a
+            className="btn btn-ghost normal-case text-xl z-10 text-white"
+            href="/"
+          >
             Mezanur Rahman
           </a>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
-          <a class="btn ml-5" href={resume}>
+          <ul className="menu menu-horizontal px-1 z-10 text-white">
+            {navItems}
+          </ul>
+          <a class="btn ml-5 z-10" href={resume}>
             DOWNLOAD RESUME
           </a>
         </div>
