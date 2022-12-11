@@ -7,7 +7,7 @@ import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
-    <div className="app">
+    <div className="card rounded-none glass app">
       <Navbar></Navbar>
       <Banner></Banner>
       <Projects></Projects>

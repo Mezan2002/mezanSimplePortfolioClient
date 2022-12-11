@@ -30,13 +30,13 @@ const Contact = () => {
   return (
     <div className="my-20 container mx-auto" id="contact">
       <div>
-        <h2 className="text-center text-xl md:text-4xl font-bold mb-5 md:mb-10">
+        <h2 className="text-center text-xl md:text-4xl font-bold mb-5 md:mb-10 text-white">
           Get In Touch
         </h2>
       </div>
-      <div className="lg:grid lg:grid-cols-2 gap-5">
+      <div className="md:grid md:grid-cols-2 gap-5">
         <div>
-          <div className="card glass w-8/12 mx-auto">
+          <div className="card glass w-full mx-auto">
             <figure>
               <img
                 src={contactFormImage}
@@ -46,63 +46,98 @@ const Contact = () => {
             </figure>
             <div className="card-body text-white">
               <h2 className="card-title">Mezanur Rahman</h2>
-              <p>Junior Web Developer</p>
-              <p>
-                I am avabilable to work as a junior web developer. Connect with
-                me via and call in to my account.
-              </p>
-              <p className="mt-5">
-                phone: 01828569660 <br /> email: mezanurrahman200212@gmail.com
-              </p>
-              <div className="card-actions">
-                <h5 className="text-xl font-bold block">Find Me On</h5>
-                <div>
-                  <p>
-                    <i class="fa-brands fa-facebook"></i>
-                  </p>
-                  <p>
-                    <i class="fa-brands fa-github"></i>
-                  </p>
-                  <p>
-                    <i class="fa-brands fa-linkedin"></i>
-                  </p>
+              <p className="">Junior Web Developer</p>
+              <div className="">
+                {/* <p>
+                  I am avabilable to work as a junior web developer. Connect
+                  with me via and call in to my account.
+                </p> */}
+                <p className="my-3">
+                  phone: 01828569660 <br /> email: mezanurrahman200212@gmail.com{" "}
+                  <br />
+                  Location: Rangpur, Bangladesh
+                </p>
+              </div>
+              <div className="">
+                <h5 className="text-xl font-bold mb-2">Find Me On</h5>
+                <div className="flex items-center">
+                  <a
+                    className="mr-3"
+                    href="https://web.facebook.com/mezanurrahman2002/"
+                  >
+                    <i class="fa-brands fa-facebook text-3xl"></i>
+                  </a>
+                  <a className="mr-3" href="https://github.com/Mezan2002">
+                    <i class="fa-brands fa-github text-3xl"></i>
+                  </a>
+                  <a
+                    className="mr-3"
+                    href="https://www.linkedin.com/in/mezanurrahman2002/"
+                  >
+                    <i class="fa-brands fa-linkedin text-3xl"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="md:pl-5 px-2 md:px-0 md:mt-24">
-          <h4 className="md:text-2xl text-xl md:mb-10 hidden md:block font-bold">
-            Contact Me
-          </h4>
-          <form ref={form} onSubmit={sendEmail}>
-            <input
-              className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl"
-              type="text"
-              name="user_name"
-              placeholder="your name"
-              required
-            />
-            <input
-              className="mt-10 border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl"
-              type="email"
-              name="user_email"
-              placeholder="your email"
-              required
-            />
-            <input
-              className="mt-10 border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl"
-              type="text"
-              name="message"
-              placeholder="your message"
-              required
-            />
-            <input
-              type="submit"
-              value="Submit"
-              className="btn mt-20 btn-block"
-            />
-          </form>
+        <div className="md:pl-5 px-2 md:px-0 md:mt-16">
+          <div className="card glass">
+            <div className="card-body">
+              <h4 className="md:text-2xl text-xl md:mb-10 hidden md:block font-bold text-white">
+                Contact Me
+              </h4>
+              <form ref={form} onSubmit={sendEmail}>
+                <div>
+                  <label className="label">
+                    <span className="label-text text-white">Your Name</span>
+                  </label>
+                  <input
+                    className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl rounded-md"
+                    type="text"
+                    name="user_name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="label">
+                    <span className="label-text text-white">Your Email</span>
+                  </label>
+                  <input
+                    className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl rounded-md"
+                    type="email"
+                    name="user_email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="label">
+                    <span className="label-text text-white">Subject</span>
+                  </label>
+                  <input
+                    className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl rounded-md"
+                    type="text"
+                    name="email_subject"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-white">Your Message</span>
+                  </label>
+                  <textarea
+                    name="message"
+                    className="textarea textarea-bordered h-40"
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="Submit"
+                  className="btn glass btn-block mt-20"
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

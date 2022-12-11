@@ -32,8 +32,8 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="md:my-20 my-10 bg-black" id="projects">
-      <h2 className="md:text-4xl text-xl text-center font-bold mb-5 md:mb-10">
+    <div className="md:my-20 my-10" id="projects">
+      <h2 className="md:text-4xl text-xl text-center font-bold mb-5 md:mb-10 text-white">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:px-20">
@@ -59,7 +59,7 @@ const Projects = () => {
                   rel="noreferrer"
                   href={project.projectLink}
                 >
-                  Show Project
+                  Explore More
                 </a>
               </div>
             </div>

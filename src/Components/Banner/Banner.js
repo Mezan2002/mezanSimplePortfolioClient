@@ -1,19 +1,25 @@
 import React from "react";
-import bannerImage from "../../assets/images/bannerImage.png";
-
+import bannerImage from "../../assets/images/mezanurrahman.png";
+import bannerBG from "../../assets/images/bannerBG.svg";
+import "./banner.css";
 const Banner = () => {
   return (
     <div className="">
-      <div className="hidden md:block">
-        <div className="relative">
-          <img src={bannerImage} className="mt-[-120px] w-full" alt="" />
-        </div>
-        <div className="absolute bottom-10 left-10 text-white">
-          <h2 className="text-[130px] font-bold">Mezanur Rahman</h2>
+      <div className="hidden md:flex items-center min-h-screen px-20">
+        <div className="w-8/12 text-white">
+          <h1 className="text-[100px] font-bold">Hi, I am</h1>
+          <h2 className="text-[100px] font-bold text-black">Mezanur Rahman</h2>
           <p className="text-xl font-semibold">
             Junior Web Developer & MERN Stack Developer & React JS Developer &
             Front-End Developer
           </p>
+        </div>
+        <div className="w-4/12">
+          {/* <div className="h-[420px] w-[420px] glass rounded-full mx-auto">
+            <div>
+              <img src={bannerBG} alt="" className="w-full" />
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="md:hidden block">
