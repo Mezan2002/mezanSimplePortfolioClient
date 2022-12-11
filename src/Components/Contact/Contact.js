@@ -36,7 +36,40 @@ const Contact = () => {
       </div>
       <div className="lg:grid lg:grid-cols-2 gap-5">
         <div>
-          <img className="rounded-xl" src={contactFormImage} alt="" />
+          <div className="card glass w-8/12 mx-auto">
+            <figure>
+              <img
+                src={contactFormImage}
+                className="w-11/12 mt-5 rounded-xl"
+                alt=""
+              />
+            </figure>
+            <div className="card-body text-white">
+              <h2 className="card-title">Mezanur Rahman</h2>
+              <p>Junior Web Developer</p>
+              <p>
+                I am avabilable to work as a junior web developer. Connect with
+                me via and call in to my account.
+              </p>
+              <p className="mt-5">
+                phone: 01828569660 <br /> email: mezanurrahman200212@gmail.com
+              </p>
+              <div className="card-actions">
+                <h5 className="text-xl font-bold block">Find Me On</h5>
+                <div>
+                  <p>
+                    <i class="fa-brands fa-facebook"></i>
+                  </p>
+                  <p>
+                    <i class="fa-brands fa-github"></i>
+                  </p>
+                  <p>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="md:pl-5 px-2 md:px-0 md:mt-24">
           <h4 className="md:text-2xl text-xl md:mb-10 hidden md:block font-bold">

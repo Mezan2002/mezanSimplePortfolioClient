@@ -32,7 +32,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="md:my-20 my-10" id="projects">
+    <div className="md:my-20 my-10 bg-black" id="projects">
       <h2 className="md:text-4xl text-xl text-center font-bold mb-5 md:mb-10">
         Projects
       </h2>
@@ -40,12 +40,16 @@ const Projects = () => {
         {projectsInfo.map((project) => (
           <div
             key={project.id}
-            className="card hover:scale-105 duration-150 card-compact shadow-xl"
+            className="card glass hover:scale-105 duration-150 card-compact shadow-xl"
           >
             <figure>
-              <img src={project.image} className="h-96 rounded-xl" alt="" />
+              <img
+                src={project.image}
+                className="md:h-96 h-56 rounded-xl"
+                alt=""
+              />
             </figure>
-            <div className="card-body ">
+            <div className="card-body text-white">
               <h2 className="card-title">{project.name}</h2>
               <p>{project.description}</p>
               <div className="card-actions">
