@@ -1,17 +1,23 @@
 import { Toaster } from "react-hot-toast";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Banner from "./Components/Banner/Banner";
-import Contact from "./Components/Contact/Contact";
-import Navbar from "./Components/Navbar/Navbar";
-import Projects from "./Components/Projects/Projects";
+import Home from "./Components/Home/Home";
+import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";
 
 function App() {
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home></Home>,
+    },
+    {
+      path: "/projectDetails",
+      element: <ProjectDetails></ProjectDetails>,
+    },
+  ]);
   return (
-    <div className="card rounded-none glass app">
-      <Navbar></Navbar>
-      <Banner></Banner>
-      <Projects></Projects>
-      <Contact></Contact>
+    <div>
+      <RouterProvider router={routes}></RouterProvider>
       <Toaster></Toaster>
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import project1 from "../../assets/images/skillUp.png";
 import project2 from "../../assets/images/khaiyalamu.png";
 import project3 from "../../assets/images/safeSale.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projectsInfo = [
@@ -59,8 +60,15 @@ const Projects = () => {
                   rel="noreferrer"
                   href={project.projectLink}
                 >
-                  Explore More
+                  Live Site Demo
                 </a>
+                <Link
+                  className="btn btn-primary mt-5"
+                  to="/projectDetails"
+                  state={{ project: project }}
+                >
+                  Explore More
+                </Link>
               </div>
             </div>
           </div>

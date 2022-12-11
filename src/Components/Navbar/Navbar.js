@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import resume from "../../assets/Resume/MezanurRahman'sResume.pdf";
 
 const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <Link href="/">Home</Link>
       </li>
       <li>
         <a href="#projects">Projects</a>

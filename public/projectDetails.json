@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Skill Up(A Skill Learning React App)",
+    "description": "I created that project with React JS, Firebase Authentication and some more interesting features.",
+    "image": "project1",
+    "projectLink": "https://skill-up-by-mezan.web.app/"
+  },
+  {
+    "id": 2,
+    "name": "Khaiyalamu (A Cloud Kitchen React App)",
+    "description": "This project was created by React JS, Firebase,MongoDB and has some awesome features. It is cloud kitchen react app for selling foods",
+
+    "image": "project2",
+    "projectLink": "https://khaiyalamu-by-mezan.web.app/"
+  },
+  {
+    "id": 3,
+    "name": "Safe Sale (Used Mobile Resale website)",
+    "description": "This project was designed by Tailwind CSS and daisy UI, This is a MERN stack website. There are some interesting functionalities on it. Go and explore it.",
+    "image": "project3",
+    "projectLink": "https://safesalebymezan.web.app/"
+  }
+]

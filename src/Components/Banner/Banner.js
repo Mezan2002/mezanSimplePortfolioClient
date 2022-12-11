@@ -10,7 +10,9 @@ const Banner = () => {
           <h1 className="text-[100px] font-bold">Hi, I am</h1>
           <h2 className="text-[100px] font-bold text-black">Mezanur Rahman</h2>
           <p className="text-xl font-semibold">
-            Junior Web Developer & MERN Stack Developer & React JS Developer &
+            Junior Web Developer <span className="text-black font-bold">|</span>{" "}
+            MERN Stack Developer <span className="text-black font-bold">|</span>{" "}
+            React JS Developer <span className="text-black font-bold">| </span>
             Front-End Developer
           </p>
         </div>
