@@ -1,6 +1,5 @@
 import React from "react";
-import bannerImage from "../../assets/images/mezanurrahman.png";
-import bannerBG from "../../assets/images/bannerBG.svg";
+import bannerImage from "../../assets/images/bannerImage.png";
 import "./banner.css";
 const Banner = () => {
   return (
@@ -24,7 +23,7 @@ const Banner = () => {
           </div> */}
         </div>
       </div>
-      <div className="md:hidden block">
+      <div className="md:hidden block mb-10">
         <div className="relative">
           <img src={bannerImage} className="w-full mt-[-90px]" alt="" />
           <div className="absolute bottom-5 left-5 text-white">

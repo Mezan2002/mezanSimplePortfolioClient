@@ -34,8 +34,8 @@ const Contact = () => {
           Get In Touch
         </h2>
       </div>
-      <div className="md:grid md:grid-cols-2 gap-5">
-        <div>
+      <div className="md:grid md:grid-cols-2 gap-5 ">
+        <div className="md:mb-0 mb-5">
           <div className="card glass w-full mx-auto">
             <figure>
               <img
@@ -48,10 +48,6 @@ const Contact = () => {
               <h2 className="card-title">Mezanur Rahman</h2>
               <p className="">Junior Web Developer</p>
               <div className="">
-                {/* <p>
-                  I am avabilable to work as a junior web developer. Connect
-                  with me via and call in to my account.
-                </p> */}
                 <p className="my-3">
                   phone: 01828569660 <br /> email: mezanurrahman200212@gmail.com{" "}
                   <br />

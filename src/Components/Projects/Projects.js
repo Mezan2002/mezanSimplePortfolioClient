@@ -22,7 +22,7 @@ const Projects = () => {
             <figure>
               <img
                 src={project.image}
-                className="md:h-96 h-56 rounded-xl"
+                className="md:h-96 h-64 rounded-xl"
                 alt=""
               />
             </figure>

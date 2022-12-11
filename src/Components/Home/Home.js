@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Navbar from "../Navbar/Navbar";
+import About from "../About/About";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="card rounded-none glass app">
         <Navbar></Navbar>
         <Banner></Banner>
+        <About></About>
         <Projects></Projects>
         <Contact></Contact>
       </div>

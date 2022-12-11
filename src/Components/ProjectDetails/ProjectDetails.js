@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const ProjectDetails = () => {
   const location = useLocation();
@@ -15,11 +15,15 @@ const ProjectDetails = () => {
   } = location?.state?.project;
   return (
     <div className="card glass min-h-screen rounded-none text-white">
-      <div className="card my-10 w-8/12 mx-auto glass">
+      <div className="card my-10 md:w-8/12 mx-auto glass">
         <div className="relative">
           <figure>
-            <img src={image} alt="" />
-            <div className="absolute top-10 left-5">
+            <img
+              className="rounded-2xl w-11/12 mt-10 md:mt-0 mx-auto md:w-full"
+              src={image}
+              alt=""
+            />
+            <div className="absolute md:top-10 md:left-5 top-3 left-3">
               <a title="back to home" className="btn rounded-full" href="/">
                 <i class="fa-solid fa-arrow-left"></i>
               </a>
@@ -27,12 +31,12 @@ const ProjectDetails = () => {
           </figure>
         </div>
         <div className="card-body">
-          <h2 className="text-3xl font-bold text-black">
+          <h2 className="md:text-3xl text-xl font-bold text-black">
             {name} by Mezanur Rahman
           </h2>
           <p className="text-black">{description}</p>
           <div>
-            <h4 className="text-2xl text-black font-bold my-4">
+            <h4 className="md:text-2xl text-lg text-black font-bold my-4">
               Project Images
             </h4>
             <div className="">
@@ -40,14 +44,16 @@ const ProjectDetails = () => {
                 <img
                   key={i}
                   src={projectImage}
-                  className="my-5 rounded-lg"
+                  className="my-5 rounded-xl"
                   alt=""
                 />
               ))}
             </div>
           </div>
           <div>
-            <h4 className="text-2xl font-bold my-4">User Technologies</h4>
+            <h4 className="md:text-2xl text-lg font-bold my-4">
+              User Technologies
+            </h4>
             <ul>
               {usedTechnologies.map((technology, i) => (
                 <li className="list-disc list-inside" key={i}>
@@ -57,7 +63,7 @@ const ProjectDetails = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-2xl font-bold my-4">Features</h4>
+            <h4 className="md:text-2xl text-lg font-bold my-4">Features</h4>
             <ul>
               {features.map((feture, i) => (
                 <li className="list-disc list-inside" key={i}>
