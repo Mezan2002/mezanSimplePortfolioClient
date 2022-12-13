@@ -58,7 +58,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 z-10 text-white">
             {navItems}
           </ul>
-          <a class="btn ml-5 z-10" href={resume}>
+          <a
+            class="btn ml-5 z-10"
+            target="_blank"
+            rel="noreferrer"
+            href={resume}
+          >
             DOWNLOAD RESUME
           </a>
         </div>
