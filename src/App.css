@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 .app {
   font-family: "Roboto", sans-serif;
-  background-color: black;
+  /* background-color: #aacaff; */
+  background-color: rgb(68, 67, 67);
 }
