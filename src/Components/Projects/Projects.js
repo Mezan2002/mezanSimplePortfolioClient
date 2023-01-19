@@ -17,7 +17,7 @@ const Projects = () => {
         {projectsInfo.map((project) => (
           <div
             key={project.id}
-            className="card glass hover:scale-105 duration-150 card-compact shadow-xl"
+            className="card glass hover:scale-90 duration-300 card-compact shadow-xl"
           >
             <figure>
               <img

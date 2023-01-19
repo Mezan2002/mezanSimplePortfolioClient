@@ -9,7 +9,7 @@ const About = () => {
             <img src={aboutMeImage} className="rounded-lg shadow-2xl" alt="" />
           </div>
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold">About Myself</h1>
+            <h1 className="md:text-5xl text-2xl font-bold">About Myself</h1>
             <p className="py-6 text-white">
               I am Mezanur Rahman From Bangladesh. I am a dedicated and focused
               learner. I am quick learner too. I am working on frontend
