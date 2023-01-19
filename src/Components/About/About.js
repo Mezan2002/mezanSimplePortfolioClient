@@ -2,7 +2,7 @@ import React from "react";
 import aboutMeImage from "../../assets/images/aboutMeImage.png";
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="hero card glass w-11/12 mx-auto md:py-36">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="md:w-1/2">
