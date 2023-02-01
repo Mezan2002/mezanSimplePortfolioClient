@@ -1,7 +1,6 @@
 import { Toaster } from "react-hot-toast";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import About from "./Components/About/About";
 import Blog from "./Components/Blog/Blog";
 import Home from "./Components/Home/Home";
 import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";

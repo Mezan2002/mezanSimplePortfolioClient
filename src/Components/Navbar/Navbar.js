@@ -27,7 +27,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar md:px-20 md:mt-4 justify-between">
+      <div className="navbar md:px-5 md:mt-4 justify-between">
         <a
           className="btn btn-ghost normal-case text-sm md:text-xl z-10 text-white"
           href="/"
@@ -60,7 +60,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div className="navbar-end hidden lg:flex w-full">
           <ul className="menu menu-horizontal px-1 z-10 text-white">
             {navItems}
           </ul>

@@ -4,11 +4,13 @@ import "./banner.css";
 const Banner = () => {
   return (
     <div className="">
-      <div className="hidden md:flex items-center min-h-screen px-20">
-        <div className="w-8/12 text-white">
-          <h1 className="text-[100px] font-bold">Hi, I am</h1>
-          <h2 className="text-[100px] font-bold text-black">Mezanur Rahman</h2>
-          <p className="text-xl font-semibold">
+      <div className="hidden relative md:flex items-center min-h-[90vh] px-20">
+        <div className="w-8/12 text-white absolute bottom-20">
+          <h1 className="text-[80px] font-semibold">Hi, I am</h1>
+          <h2 className="text-[80px] font-semibold text-black">
+            Mezanur Rahman
+          </h2>
+          <p className="text-lg font-medium">
             Junior Web Developer <span className="text-black font-bold">|</span>{" "}
             MERN Stack Developer <span className="text-black font-bold">|</span>{" "}
             React JS Developer <span className="text-black font-bold">| </span>

@@ -28,13 +28,13 @@ const Contact = () => {
       );
   };
   return (
-    <div className="my-20 container mx-auto" id="contact">
+    <div className="my-20 container mx-auto px-5" id="contact">
       <div>
         <h2 className="text-center text-xl md:text-4xl font-bold mb-5 md:mb-10 text-white">
           Get In Touch
         </h2>
       </div>
-      <div className="md:grid md:grid-cols-2 gap-5 ">
+      <div className="md:grid md:grid-cols-2 gap-5">
         <div className="md:mb-0 mb-5">
           <div className="card glass w-full mx-auto">
             <figure>
@@ -77,7 +77,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="md:pl-5 px-2 md:px-0 md:mt-16">
+        <div className="md:pl-5 px-2 md:px-0 ">
           <div className="card glass">
             <div className="card-body">
               <h4 className="md:text-2xl text-xl md:mb-10 hidden md:block font-bold text-white">
@@ -89,7 +89,8 @@ const Contact = () => {
                     <span className="label-text text-white">Your Name</span>
                   </label>
                   <input
-                    className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl rounded-md"
+                    className="border-b-2 inputForm w-full py-3 px-5 focus:outline-none text-xl
+                     rounded-md"
                     type="text"
                     name="user_name"
                     required
@@ -100,7 +101,8 @@ const Contact = () => {
                     <span className="label-text text-white">Your Email</span>
                   </label>
                   <input
-                    className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl rounded-md"
+                    className="border-b-2 inputForm w-full py-3 px-5 focus:outline-none text-xl
+                     rounded-md"
                     type="email"
                     name="user_email"
                     required
@@ -111,7 +113,8 @@ const Contact = () => {
                     <span className="label-text text-white">Subject</span>
                   </label>
                   <input
-                    className="border-b-2 inputForm w-full py-3 pl-2 focus:outline-none text-xl rounded-md"
+                    className="border-b-2 inputForm w-full py-3 px-5 focus:outline-none text-xl
+                     rounded-md"
                     type="text"
                     name="email_subject"
                     required
